@@ -7,8 +7,8 @@ public class ExerciciosTests
      [TestMethod]
      public void TestSomar()
      {
-         Exercicios exercicios = new Exercicios();
-         Assert.AreEqual(5, exercicios.Somar(2, 3));
+         SomaInt somar = new SomaInt();
+         Assert.AreEqual(5, somar.Somar(2, 3));
      }
 
      [TestMethod]

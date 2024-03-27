@@ -23,12 +23,12 @@ class Menu
                         Console.WriteLine("Saindo...");
                         break;
                     case 1:
-                        Exercicios exercicios = new Exercicios();
+                        SomaInt somar = new SomaInt();
                         Console.Write("Digite o primeiro número: ");
                         int num1 = int.Parse(Console.ReadLine());
                         Console.Write("Digite o segundo número: ");
                         int num2 = int.Parse(Console.ReadLine());
-                        Console.WriteLine($"Resultado da soma: {exercicios.Somar(num1, num2)}");
+                        Console.WriteLine($"Resultado da soma: {somar.Somar(num1, num2)}");
                         break;
                     case 2:
                         MetroMM metro = new MetroMM();

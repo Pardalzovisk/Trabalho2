@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabalho2
 {
-    public class Exercicios
+    public class SomaInt
     {
         public int Somar(int a, int b)
         {
