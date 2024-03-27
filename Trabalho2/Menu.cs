@@ -51,13 +51,13 @@ class Menu
                         }
                         break;
                     default:
-                        Console.WriteLine("Opção inválida. Tente novamente.");
+                        Console.WriteLine("Opção inválida, digite apenas números de 0 a 3. Tente novamente.");
                         break;
                 }
             }
             else
             {
-                Console.WriteLine("Opção inválida. Tente novamente.");
+                Console.WriteLine("Opção inválida, digite apenas números de 0 a 3. Tente novamente.");
             }
 
             Console.WriteLine();
