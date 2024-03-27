@@ -2,8 +2,7 @@
 class Menu
 {
     static void Main(string[] args)
-    {
-        
+    { 
         int opcao;
 
         do

@@ -9,6 +9,7 @@ namespace Trabalho2
     {
         public bool PodeSeAposentar(int idade, int anosContribuicao)
         {
+            //Band-aid para verificar anos contribuidos maiores do que a idade
             if (idade < anosContribuicao)
             {
                 return false;
