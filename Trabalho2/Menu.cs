@@ -3,7 +3,7 @@ class Menu
 {
     static void Main(string[] args)
     {
-        Exercicios exercicios = new Exercicios();
+        
         int opcao;
 
         do
@@ -23,6 +23,7 @@ class Menu
                         Console.WriteLine("Saindo...");
                         break;
                     case 1:
+                        Exercicios exercicios = new Exercicios();
                         Console.Write("Digite o primeiro número: ");
                         int num1 = int.Parse(Console.ReadLine());
                         Console.Write("Digite o segundo número: ");
@@ -30,16 +31,18 @@ class Menu
                         Console.WriteLine($"Resultado da soma: {exercicios.Somar(num1, num2)}");
                         break;
                     case 2:
+                        MetroMM metro = new MetroMM();
                         Console.Write("Digite o valor em metros: ");
                         int metros = int.Parse(Console.ReadLine());
-                        Console.WriteLine($"Valor em milímetros: {exercicios.ConverterMetrosParaMilimetros(metros)}");
+                        Console.WriteLine($"Valor em milímetros: {metro.ConverterMetrosParaMilimetros(metros)}");
                         break;
                     case 3:
+                        Aposenta aposenta = new Aposenta();
                         Console.Write("Digite a idade: ");
                         int idade = int.Parse(Console.ReadLine());
                         Console.Write("Digite os anos de contribuição: ");
                         int anosContribuicao = int.Parse(Console.ReadLine());
-                        if (exercicios.PodeSeAposentar(idade, anosContribuicao))
+                        if (aposenta.PodeSeAposentar(idade, anosContribuicao))
                         {
                             Console.WriteLine("Pode se aposentar!");
                         }

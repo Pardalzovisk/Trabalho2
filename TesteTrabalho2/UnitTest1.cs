@@ -17,17 +17,17 @@ public class UnitTest1
         [TestMethod]
         public void TestConverterMetrosParaMilimetros()
         {
-            Exercicios exercicios = new Exercicios();
-            Assert.AreEqual(5000, exercicios.ConverterMetrosParaMilimetros(5));
+            MetroMM metro = new MetroMM();
+            Assert.AreEqual(5000, metro.ConverterMetrosParaMilimetros(5));
         }
 
         [TestMethod]
         public void TestPodeSeAposentar()
         {
-            Exercicios exercicios = new Exercicios();
-            Assert.IsTrue(exercicios.PodeSeAposentar(65, 30));
-            Assert.IsTrue(exercicios.PodeSeAposentar(60, 25));
-            Assert.IsFalse(exercicios.PodeSeAposentar(60, 24));
+            Aposenta aposenta = new Aposenta();
+            Assert.IsTrue(aposenta.PodeSeAposentar(65, 30));
+            Assert.IsTrue(aposenta.PodeSeAposentar(60, 25));
+            Assert.IsFalse(aposenta.PodeSeAposentar(60, 24));
         }
     }
 }
