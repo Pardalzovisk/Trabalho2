@@ -9,7 +9,11 @@ namespace Trabalho2
     {
         public bool PodeSeAposentar(int idade, int anosContribuicao)
         {
-            if (idade >= 65 || anosContribuicao >= 30 || (idade >= 60 && anosContribuicao >= 25))
+            if (idade < anosContribuicao)
+            {
+                return false;
+            }
+            else if (idade >= 65 || anosContribuicao >= 30 || (idade >= 60 && anosContribuicao >= 25))
             {
                 return true;
             }
