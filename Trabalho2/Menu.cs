@@ -7,12 +7,15 @@ class Menu
 
         do
         {
+            Console.WriteLine("----------------------------");
             Console.WriteLine("Escolha uma opção:");
             Console.WriteLine("0) Sair");
             Console.WriteLine("1) Somar números");
             Console.WriteLine("2) Converter de metros para milímetros");
             Console.WriteLine("3) Verificar aposentadoria");
+            Console.WriteLine("----------------------------");
             Console.Write("Opção: ");
+
 
             if (int.TryParse(Console.ReadLine(), out opcao))
             {
